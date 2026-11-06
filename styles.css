@@ -1,0 +1,155 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-family: "Varela", sans-serif;
+    line-height: 1.6;
+    background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 6rem;
+    margin: 0;
+    color: rgb(140, 131, 184);
+    font-family: "Redaction 35", serif;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+header p {
+    margin: 5px;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #080808;
+    border-radius: 2rem;
+    box-shadow: 10px black ;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: "Clarity City", sans-serif;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-family: "Clarity City", sans-serif;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+
+section:nth-child(2) > div,
+section:nth-child(4) > div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+section:nth-child(2) > div > div,
+section:nth-child(4) > div > div {
+    flex: 1;
+    min-width: 220px;
+    background-color: #141414;
+    padding: 10px;
+    border-radius: 3%
+}
+
+
+.poem {
+    text-align: center;
+    padding: 15px;
+}
+
+
+section:nth-child(4) img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 15px auto;
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    section:nth-child(2) > div,
+    section:nth-child(4) > div {
+        flex-direction: column;
+    }
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    border-width: 0;
+    transition: 0.5s;
+}
+button:hover{
+    transform: scale(1.05);
+}
+#requiri{
+    margin: 20px;
+}
+a{
+    color: lightblue;
+    font-size: large;
+}
+.aura{
+    outline: 6px solid #07C3FF;
+outline-offset: 5px;
+    transition: 300ms;
+}
+.aura :hover{
+    font-weight: 1000;
+}
